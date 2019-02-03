@@ -25,12 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // Auth::id();
-
         $customer = Customer::find(1);
-        // foreach ($customers as $customer) {
-        //     echo "{$customer->name} age: {$customer->age} <br>";
-        // }
         return view('customer', ['c' => $customer]);
     }
 }
